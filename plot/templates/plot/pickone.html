@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<!--<link rel="stylesheet" type="text/css" href="{% static 'plot/style.css' %}"/>-->
+
+{% if stocks_list %}
+
+<form action="{% url 'plot:plotform'%}" method="post">
+{% csrf_token %}
+{% for stock in stocks_list %}
+    <input type="radio" name="choice" id="stock{{ forloop.counter }}" value="{{ stock.lookup_symbol}}" />
+    <label for="stock{{ forloop.counter }}">{{ stock.stock_name }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>
+
+{% else %}
+    <p>No stocks are available.</p>
+{% endif %}

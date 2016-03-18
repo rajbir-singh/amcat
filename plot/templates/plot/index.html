@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Charting Stocks</title>
+
+<!--LINK CSS FILES-->
+    {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap3/css/bootstrap.min.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap3/css/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.css' %}"/>
+<link rel="stylesheet" href="{% static 'font-mfizz-2.2/font-mfizz.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/github-activity-0.1.1.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/octicons.min.css' %}">
+
+<!--LINK JQUERY SCIPT-->
+<script type="text/javascript" src="{% static 'bootstrap3/scripts/jQuery.js' %}"></script>
+</head>
+
+<body>
+
+<div class="container-fluid header-section">
+<!--IN A BOOTS ROW THERE ARE 12 ROWS-->
+	<div class="row">
+	<!--ASSIGN BOOTS ROW 4 COLS-->
+		<div class="col-md-2">
+			<img src="{% static 'img/dp.jpg' %}" alt="My Image" class="img-responsive"/>
+			<br>
+			<a class="btn btn-cta-primary text-center" href="http://rajbirsingh.herokuapp.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+			</div>
+		<div class="col-md-10">
+			<h1 align="center" class="text-uppercase name "><br>Welcome!!, <br><br>Let's Chart Some Stocks </h1>
+
+	</div><hr>
+</div>
+</div><!--DIV FOR HEADER-->
+
+<br><br>
+	<h3 class="designation"><em>Click on Let's Chart link below to start charting the stocks that i have included in the databse, if you don't find what u're looking for please post on the blog page.I'll include it as soon as i can.</em></h3>
+
+	<br><br><br>
+	<div class="text-center">
+	<div  class="btn-group text-center" role="group" aria-label="Ex">
+		<a type="button" class="btn btn-success btn-lg" href="{% url 'plot:stocks' %}">Let's Go Charting!!</a>
+		<a type="button" class="btn btn-info btn-lg" href="{% url 'blog:blogs' %}">Get your's listed</a>
+	</div>
+</div>
+	<br><br><br>
+<div class="container-fluid footer-section">
+<div class="row text-center">
+		<h6> <strong>Copyright &copy; 2015 Rajbir Singh</strong></h6>
+</div>
+</div><!--DIV FOR FOOTER-->
+
+<!--jscript for the page should always be included at bottom-->
+<script type="text/javascript" src="{% static 'bootstrap3/scripts/helper.js' %}"></script>
+
+</body>
+
+</html>
+

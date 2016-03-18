@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			wtf
+		</title>
+		<meta charset="utf-8">
+        {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap3/css/bootstrap.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+	</head>
+
+	<body>
+		<a href="#" id="hello">say</a>
+		<div class="hide" id="disp">
+		hello
+		</div>
+
+
+			<div  id="log">
+			<div class="mdl-card__supporting-text">
+			<form id="new_form">{% csrf_token %}
+				<div class="mdl-textfield mdl-js-textfield">
+
+					<label class="mdl-textfield__label" for="name">Name</label>
+					<input class="mdl-textfield__input" type="text" id="name"/>
+					<span class="mdl-textfield__error"></span>
+				</div>
+				<br/>
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="email" id="email"/>
+					<label class="mdl-textfield__label" for="email">Email</label>
+					<span class="mdl-textfield__error"></span>
+				</div>
+				<br/>
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="title"/>
+					<label class="mdl-textfield__label" for="title">Title</label>
+					<span class="mdl-textfield__error"></span>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="data"/>
+					<label class="mdl-textfield__label" for="data">Comment</label>
+					<span class="mdl-textfield__error"></span>
+				</div>
+
+</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<input type="submit" class="mdl-button mdl-button--colored mdl-js-ripple-effect" value="submit" id="submit"/>
+			</div>
+			</form>
+	</div>
+
+<script language="JavaScript" type="text/javascript" src="{% static 'scripts/jQuery.js' %}"></script>
+	<script language="JavaScript" type="text/javascript" >
+
+	var loggedIn=false;
+	$(document).ready(function () {
+		$('#hello').on('click', function(){
+			$('#disp').slideDown();
+			});
+	});
+
+	</script>
+	</body>
+
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
