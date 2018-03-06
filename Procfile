@@ -1,1 +1,1 @@
-web: gunicorn amcat.wsgi
+web: gunicorn
