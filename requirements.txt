@@ -34,88 +34,3 @@ six==1.9.0
 Theano==0.8.2
 Werkzeug==0.11.9
 whitenoise==3.3.1
-b e a u t i f u l s o u p 4 = = 4 . 3 . 2  
- d j - d a t a b a s e - u r l = = 0 . 5 . 0  
- d j - s t a t i c = = 0 . 0 . 6  
- D j a n g o = = 1 . 9  
- d j a n g o - a j a x - s e l e c t s = = 1 . 7 . 0  
- d j a n g o - c r i s p y - f o r m s = = 1 . 6 . 0  
- d j a n g o - f m = = 0 . 2 . 0  
- d j a n g o - m o d a l v i e w = = 0 . 1 . 5  
- d j a n g o - t o o l b e l t = = 0 . 0 . 1  
- F l a s k = = 0 . 1 0 . 1  
- g u n i c o r n = = 1 9 . 7 . 1  
- i t s d a n g e r o u s = = 0 . 2 4  
- J i n j a 2 = = 2 . 8  
- M a r k u p S a f e = = 0 . 2 3  
- m a t p l o t l i b = = 1 . 4 . 2  
- m a t p l o t l y l i b = = 0 . 1 . 0  
- m e t r i c s = = 0 . 2 . 6  
- m l - m e t r i c s = = 0 . 1 . 4  
- n l t k = = 3 . 0 . 1  
- n p m = = 0 . 1 . 1  
- n u m p y = = 1 . 9 . 1  
- o p e n c v - p y t h o n = = 3 . 1 . 0  
- o p t i o n a l - d j a n g o = = 0 . 1 . 0  
- o r d e r e d d i c t = = 1 . 1  
- p a n d a s = = 0 . 1 8 . 1  
- P i l l o w = = 2 . 7 . 0  
- p l o t l y = = 1 . 6 . 6  
- p s y c o p g 2 = = 2 . 7 . 4  
- P y g m e n t s = = 2 . 1 . 3  
- p y p a r s i n g = = 2 . 0 . 3  
- p y t h o n - d a t e u t i l = = 2 . 4 . 1  
- p y t z = = 2 0 1 4 . 1 0  
- r e q u e s t s = = 2 . 6 . 0  
- s c i k i t - l e a r n = = 0 . 1 5 . 2  
- s c i p y = = 0 . 1 5 . 0  
- s e l e n i u m = = 2 . 4 4 . 0  
- s i m p l e j s o n = = 3 . 6 . 5  
- s i x = = 1 . 9 . 0  
- s t a t i c 3 = = 0 . 7 . 0  
- T h e a n o = = 0 . 8 . 2  
- W e r k z e u g = = 0 . 1 1 . 9  
- w h i t e n o i s e = = 3 . 3 . 1  
- b e a u t i f u l s o u p 4 = = 4 . 3 . 2  
- d j - d a t a b a s e - u r l = = 0 . 5 . 0  
- d j - s t a t i c = = 0 . 0 . 6  
- D j a n g o = = 1 . 9  
- d j a n g o - a j a x - s e l e c t s = = 1 . 7 . 0  
- d j a n g o - c r i s p y - f o r m s = = 1 . 6 . 0  
- d j a n g o - f m = = 0 . 2 . 0  
- d j a n g o - m o d a l v i e w = = 0 . 1 . 5  
- d j a n g o - t o o l b e l t = = 0 . 0 . 1  
- F l a s k = = 0 . 1 0 . 1  
- g u n i c o r n = = 1 9 . 7 . 1  
- i t s d a n g e r o u s = = 0 . 2 4  
- J i n j a 2 = = 2 . 8  
- M a r k u p S a f e = = 0 . 2 3  
- m a t p l o t l i b = = 1 . 4 . 2  
- m a t p l o t l y l i b = = 0 . 1 . 0  
- m e t r i c s = = 0 . 2 . 6  
- m l - m e t r i c s = = 0 . 1 . 4  
- n l t k = = 3 . 0 . 1  
- n p m = = 0 . 1 . 1  
- n u m p y = = 1 . 9 . 1  
- o p e n c v - p y t h o n = = 3 . 1 . 0  
- o p t i o n a l - d j a n g o = = 0 . 1 . 0  
- o r d e r e d d i c t = = 1 . 1  
- p a n d a s = = 0 . 1 8 . 1  
- P i l l o w = = 2 . 7 . 0  
- p l o t l y = = 1 . 6 . 6  
- p s y c o p g 2 = = 2 . 7 . 4  
- P y g m e n t s = = 2 . 1 . 3  
- p y p a r s i n g = = 2 . 0 . 3  
- p y t h o n - d a t e u t i l = = 2 . 4 . 1  
- p y t z = = 2 0 1 4 . 1 0  
- r e q u e s t s = = 2 . 6 . 0  
- s c i k i t - l e a r n = = 0 . 1 5 . 2  
- s c i p y = = 0 . 1 5 . 0  
- s e l e n i u m = = 2 . 4 4 . 0  
- s i m p l e j s o n = = 3 . 6 . 5  
- s i x = = 1 . 9 . 0  
- s t a t i c 3 = = 0 . 7 . 0  
- T h e a n o = = 0 . 8 . 2  
- W e r k z e u g = = 0 . 1 1 . 9  
- w h i t e n o i s e = = 3 . 3 . 1  
- 
