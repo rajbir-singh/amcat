@@ -40,6 +40,10 @@ def pullDetails(orderId, count):
 def download_file(file_name):
     path_to_file = EX_DIR + '\\candidateDetails\\' + file_name
     my_file = open(path_to_file, 'rb').read()
+    print('downloading file: ')
+    # with open(path_to_file, 'r') as fin:
+    #     print(fin.read())
+    print(my_file)
     response = HttpResponse(my_file, content_type = "text/html")
     response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file_name)
     response['X-Sendfile'] = smart_str(path_to_file)
