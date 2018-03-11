@@ -1,0 +1,26 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+<!doctype html>
+<head>
+<title> A page </title>
+</head>
+
+<body>
+<h3> Amcat Candidate Details!! </h3>
+{#{{ output }}#}
+{{ errors }}
+{% for content in output %}
+	<p> {{content}} </p>
+{% endfor %}
+
+</body>
+</html>

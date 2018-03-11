@@ -17,10 +17,10 @@ def pullDetails(orderId, count):
         orderId = "02027982"
     if count is None:
         count = 5
-    fileName = ''
+    fileName = []
     try:
-        fileName = 'CandidateDetails_' + orderId + '_' +  str(count) + '.txt'
-        with open(fileName, 'w')  as fw:                    # we open file in write mode rather than append mode so that if we run this script accidently AAPL.txt is updated with valid no of rows, important for other project files
+        # fileName = 'CandidateDetails_' + orderId + '_' +  str(count) + '.txt'
+        # with open(fileName, 'w')  as fw:                    # we open file in write mode rather than append mode so that if we run this script accidently AAPL.txt is updated with valid no of rows, important for other project files
             for i in range(int(orderId), int(orderId) + int(count)):
                 url = 'http://backend.myamcat.com/displayAdmitCard.php?orderId=' + str(i)
                 source =  urllib.request.urlopen(url).read()
@@ -28,9 +28,11 @@ def pullDetails(orderId, count):
                 splitSource = source.decode(encoding).split('\n')
                 orderIdDoesNotExistStrs = splitSource[33].split('Order ID not found..')
                 if len(orderIdDoesNotExistStrs) > 1:  # means str 'Order ID not found..' is present in splitSource[33]
-                    fw.write(orderId + ': Order ID not found..\n')
+                    fileName.append(orderId + ': Order ID not found..\n')
+                    # fw.write(orderId + ': Order ID not found..\n')
                 else:
-                    fw.write(orderId + ': ' + splitSource[53].split('</strong>: ')[1] + ', ' + splitSource[56].split(':</strong> ')[1] + ', ' + splitSource[59].split(':</strong> ')[1] + '\n')
+                    fileName.append(orderId + ': ' + splitSource[53].split('</strong>: ')[1] + ', ' + splitSource[56].split(':</strong> ')[1] + ', ' + splitSource[59].split(':</strong> ')[1] + '\n')
+                    # fw.write(orderId + ': ' + splitSource[53].split('</strong>: ')[1] + ', ' + splitSource[56].split(':</strong> ')[1] + ', ' + splitSource[59].split(':</strong> ')[1] + '\n')
             print('Successfully Pulled Details')
             return fileName
 
